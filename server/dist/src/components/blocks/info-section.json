@@ -1,0 +1,40 @@
+{
+    "collectionName": "components_blocks_info_sections",
+    "info": {
+        "displayName": "InfoSection"
+    },
+    "options": {},
+    "attributes": {
+        "reversed": {
+            "type": "boolean",
+            "default": false
+        },
+        "infoImage": {
+            "allowedTypes": [
+                "images",
+                "files"
+            ],
+            "type": "media",
+            "multiple": false
+        },
+        "infoHeading": {
+            "type": "string"
+        },
+        "content": {
+            "type": "richtext"
+        },
+        "cta": {
+            "type": "component",
+            "repeatable": false,
+            "component": "elements.link"
+        },
+        "theme": {
+            "type": "enumeration",
+            "enum": [
+                "turquoise",
+                "orange",
+                "blue"
+            ]
+        }
+    }
+}
