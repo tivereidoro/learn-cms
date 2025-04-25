@@ -5,7 +5,7 @@ export async function loader() {
   const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:1337";
   const url = new URL(path, BASE_URL);
 
-  const response = await fetch(url.href);
+  const response = await fetch(url);
   if (!response.ok) {
     throw new Error("Failed to fetch data");
   }
